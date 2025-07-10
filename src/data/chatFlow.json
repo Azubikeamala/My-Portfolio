@@ -1,0 +1,19 @@
+{
+  "recruiter": {
+    "askSkill": {
+      "question": "Which area of Amalachukwu’s expertise are you interested in?",
+      "options": ["QA", "Frontend", "Full Stack", "UIUX"]
+    },
+    "afterSkill": {
+      "options": ["Download Resume", "Know More", "Go Back to Skills", "Start Over", "End Chat"]
+    }
+  },
+  "client": {
+    "question": "Are you looking to hire, collaborate, or discuss a project?",
+    "options": ["Hire", "Collaborate", "Discuss a Project", "Start Over"]
+  },
+  "other": {
+    "question": "How can I assist you today?",
+    "options": ["General Info", "Send a Message", "Start Over"]
+  }
+}

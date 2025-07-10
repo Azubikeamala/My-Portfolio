@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import ParticlesBackground from "./ParticlesBackground";
 import "./App.css";
+import AIAssistant from "./components/AIAssistant";
+
 
 
 export default function Portfolio() {
@@ -151,6 +153,8 @@ export default function Portfolio() {
 
 
 </motion.section>
+
+<AIAssistant />
 
     </div>
   );
