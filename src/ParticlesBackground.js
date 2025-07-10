@@ -10,19 +10,20 @@ export default function ParticlesBackground() {
     <Particles
       id="tsparticles"
       init={particlesInit}
-      canvasClassName="particles-canvas" 
+      canvasClassName="particles-canvas"
       style={{
         position: "fixed",
         top: 0,
         left: 0,
         width: "100%",
         height: "100%",
-        zIndex: 0,  
-        pointerEvents: "none", 
+        zIndex: 0,
+        pointerEvents: "none",
       }}
       options={{
         fullScreen: { enable: false },
         fpsLimit: 60,
+        detectRetina: true,
         interactivity: {
           events: {
             onHover: {
@@ -32,7 +33,11 @@ export default function ParticlesBackground() {
             resize: true,
           },
           modes: {
-            repulse: { distance: 150, duration: 0.4 },
+            repulse: {
+              distance: 150,
+              duration: 0.1,
+              speed: 1.5,
+            },
           },
         },
         particles: {
@@ -51,6 +56,7 @@ export default function ParticlesBackground() {
             outModes: { default: "bounce" },
             random: false,
             speed: 2,
+            maxSpeed: 2, 
             straight: false,
           },
           number: {
@@ -61,7 +67,6 @@ export default function ParticlesBackground() {
           shape: { type: "circle" },
           size: { value: { min: 1, max: 5 } },
         },
-        detectRetina: true,
       }}
     />
   );
